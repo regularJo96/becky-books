@@ -1,0 +1,50 @@
+{% extends 'blog/base/base.html' %}
+
+{% load static %}
+
+{% block links%}
+<link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+<script type="text/javascript" src="{% static 'blog/js/menu.js'%}"></script>
+{% endblock %}
+
+{% block body %}
+
+<div class="grid-container">
+    <div class="row  month-book">
+        <h1 class="header">
+            Book of the Month: Brandon Sanderson's 'The Way of Kings'
+        </h1>
+    </div>
+        
+    <div class="row">
+        <div class="menu">
+            <div id="bookshelf" class="bookshelf">
+                my bookshelf
+            </div>
+
+            <div class="main">
+                <p class="font-36">
+                    Becky
+                </p>
+            </div>
+
+            <div id="academics" class="academics">
+                miscellaneous academia
+            </div>
+
+            <div id="blog" class="blog">
+                my blog
+            </div>
+        </div>
+        
+    </div>
+    <div class="row quote">
+        <p class="font-36">
+            “It was necessary, and the necessary was always possible.”<br>
+            <span class="font-18 quote">
+                ― C.S. Lewis, The Space Trilogy: Out of the Silent Planet, Perelandra, That Hideous Strength
+            </span>
+        </p>
+    </div>
+</div>
+{% endblock %}
