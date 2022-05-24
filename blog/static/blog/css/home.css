@@ -80,6 +80,8 @@
         grid-area: 4 / 1 / 5 / 2;
         justify-content: center;
         align-items: center;
+        background-image: url("/static/blog/images/academia.jpg");
+        background-size: cover;
     }
   }
   
