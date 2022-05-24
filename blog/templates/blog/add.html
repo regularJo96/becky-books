@@ -1,0 +1,31 @@
+{% extends 'blog/base/base.html' %}
+
+{% load static %}
+
+{% block links%}
+<link rel="stylesheet" href="{% static 'blog/css/add.css' %}">
+<!-- <script type="text/javascript" src="{% static 'blog/js/bookshelf.js'%}"></script> -->
+{% endblock %}
+
+{% block body %}
+
+<form action="{% url 'add_book'%}" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend><h1>add a book</h1></legend>
+            <div class="grid-container">
+                <label>book title</label>
+                <input type="CharField">
+
+                <label>author name</label>
+                <input type="CharField">
+
+                <label>brief description</label>
+                <input type="TextField">
+            </div>
+
+    </fieldset>
+    <input type="submit">
+</form>
+
+{% endblock %}

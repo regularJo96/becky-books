@@ -13,3 +13,6 @@ def bookshelf(request):
 
 def academia(request):
     return render(request, 'blog/academia.html', {})
+
+def add(request):
+    return render(request, 'blog/add.html', {})
