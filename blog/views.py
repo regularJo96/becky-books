@@ -3,9 +3,13 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("Hello, world. You're at the blog index.")
+    return render(request, 'blog/home.html', {})
 
-def view_by_year(request):
-    return HttpResponse("Hello, this is all of the years' blogs.")
+def blog(request):
+    return render(request, 'blog/blog.html', {})
 
+def bookshelf(request):
+    return render(request, 'blog/bookshelf.html', {})
 
+def academia(request):
+    return render(request, 'blog/academia.html', {})
