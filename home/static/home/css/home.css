@@ -48,10 +48,7 @@
     }
     
     .strip{
-        position: relative;
-        background-color: azure;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        background-color: rgb(202, 255, 255);
         text-align: center;
         border: solid;
         margin-top: 90%;
@@ -92,6 +89,4 @@
     .bottom-left{
         margin-bottom: 0%;
     }
-
-
 }
