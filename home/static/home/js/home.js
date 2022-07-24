@@ -1,30 +1,24 @@
 function highlight(element){
     // element.className = element.className+" highlight";
     if(element.id=="bookshelf"){
-        document.getElementById("one").className = "highlight";
-        document.getElementById("one").innerHTML = "my bookshelf";
+        element.className = "bookshelf";
     }
     else if(element.id=="blog"){
-        document.getElementById("two").className = "highlight";
-        document.getElementById("two").innerHTML = "my blog";
+        element.className = "blog";
     }
     else{
-        document.getElementById("three").className = "highlight";
-        document.getElementById("three").innerHTML = "academia";
+        element.className = "academics";
     }
 }
 
 function removeHighlight(element){
     if(element.id=="bookshelf"){
-        document.getElementById("one").className = "";
-        document.getElementById("one").innerHTML = "";
+        element.className = "bookshelf btn";
     }
     else if(element.id=="blog"){
-        document.getElementById("two").className = "";
-        document.getElementById("two").innerHTML = "";
+        element.className = "blog btn";
     }
     else{
-        document.getElementById("three").className = "";
-        document.getElementById("three").innerHTML = "";
+        element.className = "academics btn";
     }
 }
