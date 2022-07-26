@@ -16,35 +16,38 @@
     </div>
 
     <div class="menu">
-        <div id="bookshelf" class="bookshelf btn" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <div id="bookshelf" class="bookshelf btn">
             <a id="one" href="{% url 'bookshelf' %}" style="text-decoration: none; color: black;">
+                <img src="{% static 'home/images/shelf.png' %}"/>
             </a>
-            <div class="strip font-24">
-                bookshelf
-            </div>                
+            <div class="font-24 banner">
+                My Bookshelf
+            </div>
         </div>
 
-        <div id="blog" class="blog btn" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <div id="blog" class="blog btn" >
             <a id="two" href="{% url 'blog' %}" style="text-decoration: none; color: black;">
+                <img src="{% static 'home/images/blog.png' %}"/>
             </a>
-            <div class="strip font-24">
-                blog
-            </div>      
+            <div class="font-24 banner">
+                My Blog
+            </div>
         </div>
 
-        <div id="academics" class="academics btn" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <div id="academics" class="academics btn">
             <a id="three" href="{% url 'academia' %}" style="text-decoration: none; color: black;">
+                <img src="{% static 'home/images/self.png' %}"/>
             </a>
-            <div class="strip font-24">
-                academia
-            </div>      
+            <div class="font-24 banner">
+                My Self
+            </div>
         </div>
     </div>
 
     <div class="font-18 quote">
-        Book of the Month:
+        Favorite Book of the Month:&nbsp
         <span>
-            Brandon Sanderson's 'The Way of Kings'
+            'The Way of Kings' written by Brandon Sanderson
         </span>
     </div>
 </div>

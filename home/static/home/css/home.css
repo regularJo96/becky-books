@@ -31,51 +31,40 @@
     }
 
     body{
-        background-color: rgba(232, 220, 184, 0.884);
+        /* background-color: rgba(232, 220, 184, 0.884); */
+        background-color: #FBEAEB;
+        color: #2F3C7E;
     }
 
     .grid-container{
         border: solid;
         display: grid;
-        grid-template-rows: 20% 60% 20%;
+        grid-template-rows: 20% 65% 15%;
         height: 97vh;
     }
 
     .menu{
         display: grid;
         grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 80% 20%;
         justify-content: space-evenly;
     }
     
-    .strip{
-        position: relative;
-        background-color: azure;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        text-align: center;
-        border: solid;
-        margin-top: 90%;
-    }
-
     .bookshelf{
-        background-image: url("/static/home/images/bookshelf.jpg");
-        background-size: cover;
-        border-radius: 25px;
-        border: solid;
+        margin-top: 10%;
     }
 
     .blog{
-        background-image: url("/static/home/images/blog.jpg");
-        background-size: cover;
-        border-radius: 25px;
-        border: solid;
-        
+        margin-top: 10%;
     }
 
     .academics{
-        background-size: cover;
-        border-radius: 25px;
-        border: solid;
+        margin-top: 10%;
+    }
+
+    .banner{
+        margin-top: 10px;
+        text-align: center;
     }
 
     .quote{
@@ -84,14 +73,25 @@
         align-items: center;
     }
 
-    .btn{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-        border-width: thick;
+    img{
+        width: 100%;
+        height: auto;
+        border: 1px solid #2F3C7E;
+        border-radius: 20px;
+        padding: 3px;
+    }
+
+    img:hover{
+        /* old color used: rgba(0, 140, 186, 0.5); */
+        box-shadow: 0 0 10px 10px #2F3C7E;
+        width: 103%;
+        height: auto;
+        padding: 0px;
+        margin-bottom: 20px;
+        border: none;
     }
 
     .bottom-left{
         margin-bottom: 0%;
     }
-
-
 }
