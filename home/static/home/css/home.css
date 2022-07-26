@@ -24,10 +24,9 @@
   
 @media screen and (min-width: 800px) {
 
-    .name{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .greeting{
+        display: grid;
+        text-align: center;
     }
 
     body{
