@@ -17,6 +17,25 @@
 .font-36{
     font-size: 36pt;
 }
+.font-40{
+    font-size: 40pt;
+}
+
+.heading-font{
+    /* font-family: 'Garamond';
+    font-family: 'Arial';
+    font-family: 'Trebuchet'; */
+    font-family: 'Courier New';
+    /* font-family: 'Brush Script MT'; */
+}
+
+.bold-1{
+    font-weight: bold;
+}
+
+.bold-2{
+    font-weight: bolder;
+}
 
 .white{
     color: white;
