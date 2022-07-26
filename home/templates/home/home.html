@@ -10,46 +10,42 @@
 {% block body %}
 
 <div class="grid-container">
-    <div class="row month-book">
-        <h1 class="header font-12">
-            Book of the Month:<br>
-            <span class="month-book font-24">
-                Brandon Sanderson's 'The Way of Kings'
-            </span>
-        </h1>
+
+    <div class="font-36 name">
+        Becky Anderson
     </div>
-        
-    <div class="row">
-        <div class="menu">
-            <div id="bookshelf" class="bookshelf" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
-                <a id="one" href="{% url 'bookshelf' %}" style="text-decoration: none; color: black;">
-                </a>
-            </div>
 
-            <div class="main">
-                <p class="font-36">
-                    Becky Anderson
-                </p>
-            </div>
+    <div class="menu">
+        <div id="bookshelf" class="bookshelf btn" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+            <a id="one" href="{% url 'bookshelf' %}" style="text-decoration: none; color: black;">
+            </a>
+            <div class="strip font-24">
+                bookshelf
+            </div>                
+        </div>
 
-            <div id="blog" class="blog" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
-                <a id="two" href="{% url 'blog' %}" style="text-decoration: none; color: black;">
-                </a>
-            </div>
+        <div id="blog" class="blog btn" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+            <a id="two" href="{% url 'blog' %}" style="text-decoration: none; color: black;">
+            </a>
+            <div class="strip font-24">
+                blog
+            </div>      
+        </div>
 
-            <div id="academics" class="academics" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
-                <a id="three" href="{% url 'academia' %}" style="text-decoration: none; color: black;">
-                </a>
-            </div>
+        <div id="academics" class="academics btn" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+            <a id="three" href="{% url 'academia' %}" style="text-decoration: none; color: black;">
+            </a>
+            <div class="strip font-24">
+                academia
+            </div>      
         </div>
     </div>
-    <div class="row quote">
-        <p class="font-36">
-            “It was necessary, and the necessary was always possible.”<br>
-            <span class="font-18 quote">
-                ― C.S. Lewis, The Space Trilogy: Out of the Silent Planet, Perelandra, That Hideous Strength
-            </span>
-        </p>
+
+    <div class="font-18 quote">
+        Book of the Month:
+        <span>
+            Brandon Sanderson's 'The Way of Kings'
+        </span>
     </div>
 </div>
 {% endblock %}
