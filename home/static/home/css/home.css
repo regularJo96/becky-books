@@ -31,48 +31,43 @@
     }
 
     body{
-        background-color: rgba(232, 220, 184, 0.884);
+        /* background-color: rgba(232, 220, 184, 0.884); */
+        background-color: #FBEAEB;
+        color: #2F3C7E;
     }
 
     .grid-container{
         border: solid;
         display: grid;
-        grid-template-rows: 20% 60% 20%;
+        grid-template-rows: 20% 65% 15%;
         height: 97vh;
     }
 
     .menu{
         display: grid;
         grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 80% 20%;
         justify-content: space-evenly;
     }
     
-    .strip{
-        background-color: rgb(202, 255, 255);
-        text-align: center;
-        border: solid;
-        margin-top: 90%;
-    }
-
     .bookshelf{
-        background-image: url("/static/home/images/bookshelf.jpg");
         background-size: cover;
-        border-radius: 25px;
-        border: solid;
+        margin-top: 10%;
     }
 
     .blog{
-        background-image: url("/static/home/images/blog.jpg");
         background-size: cover;
-        border-radius: 25px;
-        border: solid;
-        
+        margin-top: 10%;
     }
 
     .academics{
         background-size: cover;
-        border-radius: 25px;
-        border: solid;
+        margin-top: 10%;
+    }
+
+    .banner{
+        margin-top: 10px;
+        text-align: center;
     }
 
     .quote{
@@ -81,9 +76,19 @@
         align-items: center;
     }
 
-    .btn{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-        border-width: thick;
+    img{
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(65, 65, 65);
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    img:hover{
+        /* old color used: rgba(0, 140, 186, 0.5); */
+        box-shadow: 0 0 10px 10px #2F3C7E;
+        padding: 0px;
+        margin-bottom: 20px;
     }
 
     .bottom-left{
