@@ -17,28 +17,28 @@
 
     <div class="menu">
         <div id="bookshelf" class="bookshelf btn">
-            <a id="one" href="{% url 'bookshelf' %}" style="text-decoration: none; color: black;">
+            <a id="one" href="{% url 'bookshelf' %}" onmouseover="textDown('banner1')" onmouseout="textUp('banner1')">
                 <img src="{% static 'home/images/shelf.png' %}"/>
             </a>
-            <div class="font-24 banner">
+            <div id="banner1" class="font-24 banner">
                 My Bookshelf
             </div>
         </div>
 
-        <div id="blog" class="blog btn" >
-            <a id="two" href="{% url 'blog' %}" style="text-decoration: none; color: black;">
+        <div id="blog" class="blog btn">
+            <a id="two" href="{% url 'blog' %}" onmouseover="textDown('banner2')" onmouseout="textUp('banner2')">
                 <img src="{% static 'home/images/blog.png' %}"/>
             </a>
-            <div class="font-24 banner">
+            <div id="banner2" class="font-24 banner">
                 My Blog
             </div>
         </div>
 
         <div id="academics" class="academics btn">
-            <a id="three" href="{% url 'academia' %}" style="text-decoration: none; color: black;">
+            <a id="three" href="{% url 'academia' %}" onmouseover="textDown('banner3')" onmouseout="textUp('banner3')">
                 <img src="{% static 'home/images/self.png' %}"/>
             </a>
-            <div class="font-24 banner">
+            <div id="banner3" class="font-24 banner">
                 My Self
             </div>
         </div>
