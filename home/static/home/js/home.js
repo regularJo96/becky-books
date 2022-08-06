@@ -1,6 +1,6 @@
 function textDown(id){
     const element = document.getElementById(id);
-    element.style = "transition-duration:1s;transform: translate(0px, 40px);"
+    element.style = "transition-duration:1s;transform: translate(0px, 30px);"
 }
 
 function textUp(id){

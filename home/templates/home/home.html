@@ -9,48 +9,29 @@
 
 {% block body %}
 
-<div class="grid-container">
-
-    <div class="greeting">
-        <div class="font-30">
-            Greetings fellow humans!
+<div class="row-1">
+    <div class="top-text">
+        <div style="font-size: 50pt;">
+            Hi, I'm
         </div>
-        <div class="font-40 heading-font">
-            I'm Becky.
+        <div style="font-size: 70pt;">
+            Becky
         </div>
-        <div class=font-18>
-            Thanks for stopping by! Spend some time at my bookshelf, check out my blog or just get to know a little about me. 
-        </div>
-        
+    </div>
+    <div class="top-pic">
+        <img src="{% static 'home/images/book-with-flower.jpg' %}"/>
     </div>
 
-    <div class="menu">
-        <div id="bookshelf" class="bookshelf btn">
-            <a id="one" href="{% url 'bookshelf' %}" onmouseover="textDown('banner1')" onmouseout="textUp('banner1')">
-                <img src="{% static 'home/images/shelf.png' %}"/>
-            </a>
-            <div id="banner1" class="font-24 banner">
-                My Bookshelf
-            </div>
-        </div>
-
-        <div id="blog" class="blog btn">
-            <a id="two" href="{% url 'blog' %}" onmouseover="textDown('banner2')" onmouseout="textUp('banner2')">
-                <img src="{% static 'home/images/blog.png' %}"/>
-            </a>
-            <div id="banner2" class="font-24 banner">
-                My Blog
-            </div>
-        </div>
-
-        <div id="academics" class="academics btn">
-            <a id="three" href="{% url 'academia' %}" onmouseover="textDown('banner3')" onmouseout="textUp('banner3')">
-                <img src="{% static 'home/images/self.png' %}"/>
-            </a>
-            <div id="banner3" class="font-24 banner">
-                My Self
-            </div>
-        </div>
+</div>
+<div class="row-2">
+    <div class="bottom-pic">
+        <img src="{% static 'home/images/cat.jpg' %}"/>
+    </div>
+    <div class="bottom-text">
+        &emsp;This is where you should write a few sentences about yourself. Maybe include that
+        you're a writer, something(s) you enjoy doing (hobbies, etc.), or whatever you wish.
+        Basically a succinct elevator pitch. But most importantly, you want to quickly establish that
+        you write well, possibly cleverly.
     </div>
 </div>
 {% endblock %}
